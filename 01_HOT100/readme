@@ -1,0 +1,27 @@
+
+
+2022/07/11
+
+19. pre.next=pre.next.next删除node，否则[1],1 只有1个节点删除倒数第一个的case会错误；
+23. 用到LC21.
+25. 还是出错
+end.next=None # 与原链表断开
+4个指针，
+pre=dummy
+start=end=post=head
+
+head,pre 已翻转
+start,end 正在进行翻转
+post 未翻转
+
+31. 对[j:]区间升序 nums[j:] = sorted(nums[j:])
+33.  [l,mid] [mid+1,r]
+    [l,mid-1] [mid,r]
+    主要还是看mid是否包含res，如果不包含res，可以跨到下个区
+
+
+
+ops:10\17\
+
+
+25\33

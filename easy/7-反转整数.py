@@ -19,3 +19,4 @@ if __name__ == '__main__':
     x = 1534236469
     myResult = Solution()
     print(myResult.reverse(x))
+
