@@ -1,6 +1,7 @@
 """
 middle 2021-11-08 二维动态规划
 dp[i][j]: 到达网格(i,j)时, 共有 dp[i][j] 种走法。
+初始化要注意，边上向下、向右都是1种。
 https://leetcode-cn.com/problems/unique-paths/solution/62-bu-tong-lu-jing-tu-jie-dong-tai-gui-h-2b0k/
 """
 class Solution:

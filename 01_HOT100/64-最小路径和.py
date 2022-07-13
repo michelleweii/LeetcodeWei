@@ -6,7 +6,7 @@ middle 2022-05-13 dp
 class Solution(object):
     def func(self,grid):
         m,n=len(grid),len(grid[0])
-        # dp[i][j]表示i,j位置最小路径he
+        # dp[i][j]表示i,j位置最小路径和
         dp=[[0]*n for _ in range(m)]
         dp[0][0]=grid[0][0]
         for i in range(1,m):

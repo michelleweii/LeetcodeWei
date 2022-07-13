@@ -9,7 +9,8 @@ dp[i-1][j-1] 表示替换操作
 dp[i-1][j] 表示删除操作。dp[i-1][j]是删除了word1。
 dp[i][j-1] 表示插入操作。dp[i][j-1]是删除了word2。
 # 为什么要这样表示的原因？
-因为题意要求从word1到word2，word1是可变的，word2是不可变的。dp[i-1][j] 表示当前word1[i]与word2[j]是不匹配的，那我去找下word1[i-1]与word2[j]匹配的情况，
+因为题意要求从word1到word2，word1是可变的，word2是不可变的。
+dp[i-1][j] 表示当前word1[i]与word2[j]是不匹配的，那我去找下word1[i-1]与word2[j]匹配的情况，
 如果该情况下最小，那就删除当前的word1[i]。dp[i][j-1]表示我去看看word1[i]与word2[j-1]的匹配情况，如果匹配的结果是最小的，那就增加一个word1[i+1] == word2[j]就行了。
 """
 class Solution:
