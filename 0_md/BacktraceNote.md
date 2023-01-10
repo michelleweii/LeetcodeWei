@@ -47,6 +47,10 @@ if i>start_index and candidates[i] == candidates[i-1]:continue
 
 
 
+> 组合问题中，需要明确题目要求
+> candidates是否是无重复的，如果是则需要.sort(), 并利用used[]进行去重(根据题目)。
+> candidates中元素是否是可以被无限制选取的，如果是start_index=i，如果不是start_index=i+1，i+1可以实现去重。
+
 ## 排列
 
 > **<u>*因为 [1,2] 和 [2,1]是不同的，所以不需要 start_index。*</u>**
