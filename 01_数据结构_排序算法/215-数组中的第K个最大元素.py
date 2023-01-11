@@ -30,13 +30,13 @@ class Solution(object):
             nums[j] = nums[i]
         nums[i] = pviot
         # i是分割点
-        # # 直接快速排序会超过时间限制
-        # 若位置小于index，则在右边找
-        if index<i:return self.quick_sort(nums,left,i-1,index)
-        # 若位置大于index，则在左边找
-        elif index>i:return self.quick_sort(nums,i+1,right,index)
+        # 直接快速排序会超过时间限制
+        # 若位置小于index，则在左边找
+        if index<i: return self.quick_sort(nums,left,i-1,index)
+        # 若位置大于index，则在右边找
+        elif index>i: return self.quick_sort(nums,i+1,right,index)
         # 若刚好相同，则直接返回即可
-        else:return nums[i]
+        else: return nums[i]
 
 if __name__ == '__main__':
     # nums = [3,2,1,5,6,4]
